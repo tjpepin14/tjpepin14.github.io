@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+	/* background: url('http://www.bestfreejpg.com/wp-content/uploads/2014/05/best-textured-background-181.jpg'); */
+    background-size: cover;
+    background-repeat:no-repeat;
+    display: compact;
+    font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.list-group-item {
+	background-color: #eee;
+}
+.jumbotron {
+	padding: 25px;
+}
+
+.modal-open {
+	overflow: auto;
+}
+
+.modal-open[style] {
+	padding-right: 0px !important;
+}
+/**
+ allow some marked <ul>s to act as <ol>s, for list-group compat.
+ <li>s with class 'numberless' will not be numbered, for titles and such
+ */
+ul.ol li.list-group-item:not(.numberless) { 
+    list-style: decimal inside;
+    display: list-item;
+}
